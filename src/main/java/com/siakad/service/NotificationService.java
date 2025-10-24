@@ -1,4 +1,5 @@
 package com.siakad.service;
+
 /**
  * Interface untuk service notifikasi
  * Interface ini akan di-mock dalam unit testing
