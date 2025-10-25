@@ -13,8 +13,8 @@ class StudentTest {
     void testConstructorAndGetters() {
         Student student = new Student(
                 "STU001",
-                "Gerry",
-                "gerry@example.com",
+                "Titi",
+                "titi@example.com",
                 "Rekayasa Keamanan Siber",
                 5,
                 3.5,
@@ -22,8 +22,8 @@ class StudentTest {
         );
 
         assertEquals("STU001", student.getStudentId());
-        assertEquals("Gerry", student.getName());
-        assertEquals("gerry@example.com", student.getEmail());
+        assertEquals("Titi", student.getName());
+        assertEquals("titi@example.com", student.getEmail());
         assertEquals("Rekayasa Keamanan Siber", student.getMajor());
         assertEquals(5, student.getSemester());
         assertEquals(3.5, student.getGpa());
@@ -35,18 +35,18 @@ class StudentTest {
         Student student = new Student();
 
         student.setStudentId("STU002");
-        student.setName("Alya");
-        student.setEmail("alya@example.com");
-        student.setMajor("Teknik Informatika");
+        student.setName("Alika");
+        student.setEmail("alika@example.com");
+        student.setMajor("Teknik Lingkungan");
         student.setSemester(3);
         student.setGpa(2.75);
         student.setAcademicStatus("PROBATION");
 
         assertAll(
                 () -> assertEquals("STU002", student.getStudentId()),
-                () -> assertEquals("Alya", student.getName()),
-                () -> assertEquals("alya@example.com", student.getEmail()),
-                () -> assertEquals("Teknik Informatika", student.getMajor()),
+                () -> assertEquals("Alika", student.getName()),
+                () -> assertEquals("alika@example.com", student.getEmail()),
+                () -> assertEquals("Teknik Lingkungan", student.getMajor()),
                 () -> assertEquals(3, student.getSemester()),
                 () -> assertEquals(2.75, student.getGpa()),
                 () -> assertEquals("PROBATION", student.getAcademicStatus())
