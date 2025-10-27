@@ -17,17 +17,18 @@ class CourseTest {
 
     @BeforeEach
     void setUp() {
-        course = new Course("IF101", "Pemrograman Dasar", 3, 30, 10, "Bu Sinta");
+        course = new Course("IF101", "Pengujian Perangkat Lunak",
+                3, 30, 10, "Pak Krisna");
     }
 
     @Test
     void testConstructorAndGetters() {
         assertEquals("IF101", course.getCourseCode());
-        assertEquals("Pemrograman Dasar", course.getCourseName());
+        assertEquals("Pengujian Perangkat Lunak", course.getCourseName());
         assertEquals(3, course.getCredits());
         assertEquals(30, course.getCapacity());
         assertEquals(10, course.getEnrolledCount());
-        assertEquals("Bu Sinta", course.getLecturer());
+        assertEquals("Pak Krisna", course.getLecturer());
         assertNotNull(course.getPrerequisites());
     }
 
